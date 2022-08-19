@@ -1,0 +1,41 @@
+body {
+  margin: 15;
+}
+
+
+.custom-menu {
+  display: none;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 4px;
+
+  position: fixed;
+}
+
+.custom-menu.active {
+  display: flex;
+};
+
+.custom-menu .item {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid green;
+  cursor: pointer;
+};
+
+.custom-menu.item:hover {
+  background-color: chocolate;
+}
+
+.custom-menu.item:last-child {
+  border-bottom:none;
+}
+.miniblock {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;  
+  position: absolute;
+/* transition: .05s; */
+}
